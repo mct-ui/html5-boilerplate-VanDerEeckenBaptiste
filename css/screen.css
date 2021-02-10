@@ -9,7 +9,8 @@ html {
     font-size: 16px;
     color: #111;
     line-height: 1.5;
-    padding: 24px;
+    padding: 48px 24px 24px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -25,7 +26,8 @@ body{
  */
 
 ::-moz-selection {
-
+    background-color: #44c8f5;
+    color: #fff;
 }
 
 ::selection {
@@ -87,8 +89,7 @@ figure {
 }
 
 ul,
-ol,
-blockquote {
+ol {
     padding-left: 24px;
 }
 
@@ -102,7 +103,11 @@ blockquote {
     font-size: 23px;
     line-height: 32px;
     font-family: "Times New Roman", serif;
-    margin-left: 0;
+    margin: 0 0 24px;
+}
+blockquote * {
+    font-size: inherit;
+    line-height: inherit;
 }
 
 figcaption {
@@ -113,12 +118,34 @@ figcaption {
 }
 
 hr {
-
+    border: 0;
+    height: 1px;
+    background: lightgray;
+    margin: 0 0 24px;
 }
 
 a {
     color: royalBlue;
     transition: all .1s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.odd {
+background-color: whitesmoke;
 }
 
 a:visited,
@@ -156,7 +183,7 @@ a:focus {
         line-height: 64px;
     }
     html {
-        padding: 48px;
+        padding: 48px 48px 24px;
     }
 }
 
